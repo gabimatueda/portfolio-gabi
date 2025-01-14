@@ -8,7 +8,6 @@ const MenuOverlay = ({ links }) => {
                 <li key={index}>
                     <NavLink href={link.path} title={link.title} />
                 </li>
-
             ))}
         </ul>
     );
