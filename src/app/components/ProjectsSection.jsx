@@ -7,27 +7,27 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
     {
         id: 1,
-        title: "React Portfolio Website",
-        description: "Project 1 description",
-        image: "/images/projects/1.png",
+        title: "Meu Portfólio",
+        description: "Criação do meu portfólio responsivo com React.Js + Vite + TailwindCSS.",
+        image: "/images/projects/portfolio.png",
         tag: ["All", "Web"],
         gitUrl: "/",
         previewUrl: "/",
     },
     {
         id: 2,
-        title: "React Portfolio Website",
-        description: "Project 1 description",
-        image: "/images/projects/1.png",
+        title: "Planner de Viagem",
+        description: " Desenvolvido com React durante o evento NLW Journey da Rocketseat. O objetivo deste projeto é ajudar os usuários a planejarem suas viagens de forma organizada e eficiente.",
+        image: "/images/projects/planner_viagem.jpg",
         tag: ["All", "Web"],
         gitUrl: "/",
         previewUrl: "/",
     },
     {
         id: 3,
-        title: "React Portfolio Website",
-        description: "Project 1 description",
-        image: "/images/projects/1.png",
+        title: "Landing Page Confeitaria",
+        description: "Uma confeitaria de cupcakes online, com uma ótima experiencia visual garantida.",
+        image: "/images/projects/confeitaria.png",
         tag: ["All", "Web"],
         gitUrl: "/",
         previewUrl: "/",
@@ -76,7 +76,6 @@ const ProjectsSection = () => {
                 title={project.title}
                 description={project.description} 
                 imgUrl={project.image} 
-                tags={project} 
                 gitUrl={project.gitUrl}
                 previewUrl={project.previewUrl}
                 />
