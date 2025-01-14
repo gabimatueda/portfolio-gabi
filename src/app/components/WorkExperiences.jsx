@@ -26,7 +26,7 @@ const experiences = [
 
 const WorkExperiences = () => {
   return (
-    <section id="work-experiences" className="bg-gradient-to-b from-[#121212] via-[#181818] to-[#121212]">
+    <section id="work-experiences" className="bg-gradient-to-b from-[#121212] via-[#181818] to-[#121212] mt-20">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         Experiência
       </h2>
