@@ -7,6 +7,15 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
     {
         id: 1,
+        title: "Spotify Imersão Alura",
+        description: "Recriação da interface do Spotify com HTML, CSS E JS e utilização do React",
+        image: "/images/projects/spotify-alura.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/gabimatueda/spotify-react",
+        previewUrl: "https://spotify-react-kappa.vercel.app/",
+    },
+    {
+        id: 2,
         title: "Meu Portfólio",
         description: "Criação do meu portfólio responsivo com React.Js + Vite + TailwindCSS.",
         image: "/images/projects/portfolio.png",
@@ -15,22 +24,22 @@ const projectsData = [
         previewUrl: "/",
     },
     {
-        id: 2,
+        id: 3,
         title: "Planner de Viagem",
         description: " Desenvolvido com React durante o evento NLW Journey da Rocketseat. O objetivo deste projeto é ajudar os usuários a planejarem suas viagens de forma organizada e eficiente.",
         image: "/images/projects/planner_viagem.jpg",
         tag: ["All", "Web"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/gabimatueda/planner-viagens",
         previewUrl: "/",
     },
     {
-        id: 3,
+        id: 4,
         title: "Landing Page Confeitaria",
         description: "Uma confeitaria de cupcakes online, com uma ótima experiencia visual garantida.",
         image: "/images/projects/confeitaria.png",
         tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/",
+        gitUrl: "https://github.com/gabimatueda/landingpage-confeitaria",
+        previewUrl: "https://the-best-cupcake.vercel.app/",
     },
 ];
 
