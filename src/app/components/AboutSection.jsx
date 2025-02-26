@@ -11,7 +11,7 @@ const AboutSection = () => {
                 <div className="mt-4 md:mt-0 flex flex-col justify-center text-left">
                     <h2 className="text-4xl font-bold text-white mb-4">Sobre Mim</h2>
                     <p className="text-base lg:text-lg">
-                        Sou uma estudante dedicada de Bacharelado em Engenharia de Software, apaixonada por tecnologia e sempre em busca de aprendizado contínuo. Minha jornada é impulsionada pelo desejo de estar na vanguarda das inovações e enfrentar desafios que promovam meu crescimento profissional.
+                    Sou desenvolvedora apaixonada por tecnologia. Tenho experiência em projetos freelancers quanto em soluções corporativas, com foco em resultados práticos, inovação e qualidade. Comprometida com prazos e detalhes, busco sempre entregar trabalhos que superem as expectativas e gerem impacto positivo.
                     </p>
                 </div>
             </div>
