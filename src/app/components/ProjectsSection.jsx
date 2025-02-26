@@ -10,41 +10,77 @@ const projectsData = [
         title: "Spotify Imersão Alura",
         description: "Recriação da interface do Spotify com HTML, CSS E JS e utilização do React",
         image: "/images/projects/spotify-alura.png",
-        tag: ["All", "Web"],
+        tag: ["Projetos Acadêmicos"],
         gitUrl: "https://github.com/gabimatueda/spotify-react",
         previewUrl: "https://spotify-react-kappa.vercel.app/",
     },
     {
         id: 2,
+        title: "Spotify Imersão Alura",
+        description: "Recriação da interface do Spotify com HTML, CSS E JS e utilização do React",
+        image: "/images/projects/spotify-alura.png",
+        tag: ["Projetos Acadêmicos"],
+        gitUrl: "https://github.com/gabimatueda/spotify-react",
+        previewUrl: "https://spotify-react-kappa.vercel.app/",
+    },
+    {
+        id: 3,
         title: "Meu Portfólio",
         description: "Criação do meu portfólio responsivo com React.Js + Vite + TailwindCSS.",
         image: "/images/projects/portfolio.png",
-        tag: ["All", "Web"],
+        tag: ["Projetos Acadêmicos"],
         gitUrl: "/",
         previewUrl: "/",
     },
     {
-        id: 3,
+        id: 4,
         title: "Planner de Viagem",
         description: " Desenvolvido com React durante o evento NLW Journey da Rocketseat. O objetivo deste projeto é ajudar os usuários a planejarem suas viagens de forma organizada e eficiente.",
         image: "/images/projects/planner_viagem.jpg",
-        tag: ["All", "Web"],
+        tag: ["Projetos Acadêmicos"],
         gitUrl: "https://github.com/gabimatueda/planner-viagens",
         previewUrl: "/",
     },
     {
-        id: 4,
+        id: 5,
         title: "Landing Page Confeitaria",
         description: "Uma confeitaria de cupcakes online, com uma ótima experiencia visual garantida.",
         image: "/images/projects/confeitaria.png",
-        tag: ["All", "Web"],
+        tag: ["Projetos Acadêmicos"],
         gitUrl: "https://github.com/gabimatueda/landingpage-confeitaria",
         previewUrl: "https://the-best-cupcake.vercel.app/",
+    },
+    {
+        id: 6,
+        title: "Site Institucional - Mamma&Alchismista",
+        description: "Site institucional para uma gelataria, com o objetivo de promover a marca e apresentar seus sabores exclusivos.",
+        image: "/images/services/MammaAlchimista.png",
+        tag: ["Serviços Realizados"],
+        // gitUrl: "",
+        previewUrl: "https://www.mammagelato.com.br/",
+    },
+    {
+        id: 7,
+        title: "Site Institucional - EspaçoGrill",
+        description: "Site institucional para um restaurante, com foco em destacar o cardápio, localização e a experiência gastronômica única",
+        image: "/images/services/EspaçoGrill.png",
+        tag: ["Serviços Realizados"],
+        // gitUrl: "",
+        previewUrl: "https://www.xn--espaogrill-r6a.com/",
+    },
+    {
+        id: 8,
+        title: "Landing Page - Fernandes Beauty Studio",
+        description: "Landing page otimizada para captura de clientes para um estúdio de maquiagem e tranças.",
+        image: "/images/services/FernandesBeauty.png",
+        tag: ["Serviços Realizados"],
+        // gitUrl: "",
+        previewUrl: "https://fernandesbeauty.com/",
     },
 ];
 
 const ProjectsSection = () => {
-    const [tag, setTag] = useState("All");
+    const [tag, setTag] = useState("Projetos Acadêmicos");
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
@@ -64,12 +100,11 @@ const ProjectsSection = () => {
     return (
         <section id="projects">
             <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-                Meus Projetos
+                Projetos
             </h2>
             <div className="text-white flex flex-row justify-center items-center gap-2  py-6">
-                <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
-                <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
-                <ProjectTag onClick={handleTagChange} name="Mobile" isSelected={tag === "Mobile"} />
+                <ProjectTag onClick={handleTagChange} name="Projetos Acadêmicos" isSelected={tag === "Projetos Acadêmicos"} />
+                <ProjectTag onClick={handleTagChange} name="Serviços Realizados" isSelected={tag === "Serviços Realizados"} />
             </div>
             <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
                 {filteredProjects.map((project, index) => (
@@ -87,6 +122,7 @@ const ProjectsSection = () => {
                 imgUrl={project.image} 
                 gitUrl={project.gitUrl}
                 previewUrl={project.previewUrl}
+                tag={project.tag}
                 />
                 </motion.li>
                 ))}
