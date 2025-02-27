@@ -7,12 +7,12 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
     {
         id: 1,
-        title: "Spotify Imersão Alura",
-        description: "Recriação da interface do Spotify com HTML, CSS E JS e utilização do React",
-        image: "/images/projects/spotify-alura.png",
+        title: "Sistema de Invite",
+        description: "Projeto feito no NLW Connect da Rocketseat, foi desenvolvido um sistema de invite onde conta com uma logística de ranking, número de cliques por convite e cadastro.",
+        image: "/images/projects/codecraft.png",
         tag: ["Projetos Acadêmicos"],
-        gitUrl: "https://github.com/gabimatueda/spotify-react",
-        previewUrl: "https://spotify-react-kappa.vercel.app/",
+        gitUrl: "https://github.com/gabimatueda/nlw-connect-react",
+        previewUrl: "https://nlw-connect-react-two.vercel.app/",
     },
     {
         id: 2,
@@ -29,8 +29,8 @@ const projectsData = [
         description: "Criação do meu portfólio responsivo com React.Js + Vite + TailwindCSS.",
         image: "/images/projects/portfolio.png",
         tag: ["Projetos Acadêmicos"],
-        gitUrl: "/",
-        previewUrl: "/",
+        gitUrl: "https://github.com/gabimatueda/portfolio-gabi",
+        previewUrl: "https://gabimatueda.vercel.app/",
     },
     {
         id: 4,
@@ -56,7 +56,6 @@ const projectsData = [
         description: "Site institucional para uma gelataria, com o objetivo de promover a marca e apresentar seus sabores exclusivos.",
         image: "/images/services/MammaAlchimista.png",
         tag: ["Serviços Realizados"],
-        // gitUrl: "",
         previewUrl: "https://www.mammagelato.com.br/",
     },
     {
@@ -65,7 +64,6 @@ const projectsData = [
         description: "Site institucional para um restaurante, com foco em destacar o cardápio, localização e a experiência gastronômica única",
         image: "/images/services/EspaçoGrill.png",
         tag: ["Serviços Realizados"],
-        // gitUrl: "",
         previewUrl: "https://www.xn--espaogrill-r6a.com/",
     },
     {
@@ -74,7 +72,6 @@ const projectsData = [
         description: "Landing page otimizada para captura de clientes para um estúdio de maquiagem e tranças.",
         image: "/images/services/FernandesBeauty.png",
         tag: ["Serviços Realizados"],
-        // gitUrl: "",
         previewUrl: "https://fernandesbeauty.com/",
     },
 ];
