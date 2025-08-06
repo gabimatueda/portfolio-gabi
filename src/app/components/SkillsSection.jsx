@@ -3,12 +3,12 @@
 import { useState } from 'react';
 
 const skills = [
-    { name: 'React', img: '/images/skills/react.png' },
+    { name: 'React', img: '/images/skills/react.svg' },
+    { name: 'Java', img: '/images/skills/java.svg' },
+    { name: 'Spring Boot', img: '/images/skills/springboot.svg' },
+    { name: 'MongoDB', img: '/images/skills/mongodb.svg' },
+    // { name: 'Amazon Web Services', img: '/images/skills/aws.svg' },
     { name: 'Flutter', img: '/images/skills/flutter.png' },
-    { name: 'JavaScript', img: '/images/skills/javascript.png' },
-    { name: 'TypeScript', img: '/images/skills/typescript.png' },
-    { name: 'NodeJs', img: '/images/skills/nodeJs.png' },
-    { name: 'VueJs', img: '/images/skills/vueJs.png' },
 ];
 
 export function Skills() {

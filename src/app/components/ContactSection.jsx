@@ -10,9 +10,9 @@ const ContactSection = () => {
     return(
         <section className="flex flex-col items-center my-12 md:my-12 py-24 gap-4 relative" id="contact">  
                 <div className="text-center">
-                <h5 className="text-xl font-bold text-white my-2">Entre em contato comigo!</h5>
+                <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
                 <p className="text-[#ADB7BE] mb-4 max-w-md">
-                  Gostou do meu trabalho ou tem um projeto em mente? Vamos conversar! Estou disponível para colaborar em projetos como freelancer ou integrar sua equipe. 
+                  Gostou do meu trabalho? Vamos conversar! 
                 </p>
                 <div className="socials flex flex-row gap-2 justify-center">
                     <Link href="https://github.com/gabimatueda">

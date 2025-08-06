@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
-import WorkExperiences from "./components/WorkExperiences";
 import { Skills } from "./components/SkillsSection";
 import ContactSection from "./components/ContactSection";
 
@@ -17,7 +16,6 @@ export default function Home() {
           <Skills />
           <AboutSection/>
           <ProjectsSection/>
-          {/* <WorkExperiences/> */}
           <ContactSection/>
         </div>
         <Footer/>

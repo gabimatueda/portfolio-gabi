@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
@@ -50,44 +49,11 @@ const projectsData = [
         gitUrl: "https://github.com/gabimatueda/landingpage-confeitaria",
         previewUrl: "https://the-best-cupcake.vercel.app/",
     },
-    {
-        id: 6,
-        title: "Site Institucional - Mamma&Alchismista",
-        description: "Site institucional para uma gelataria, com o objetivo de promover a marca e apresentar seus sabores exclusivos.",
-        image: "/images/services/MammaAlchimista.png",
-        tag: ["Serviços Realizados"],
-        previewUrl: "https://www.mammagelato.com.br/",
-    },
-    {
-        id: 7,
-        title: "Site Institucional - EspaçoGrill",
-        description: "Site institucional para um restaurante, com foco em destacar o cardápio, localização e a experiência gastronômica única",
-        image: "/images/services/EspaçoGrill.png",
-        tag: ["Serviços Realizados"],
-        previewUrl: "https://www.xn--espaogrill-r6a.com/",
-    },
-    {
-        id: 8,
-        title: "Landing Page - Fernandes Beauty Studio",
-        description: "Landing page otimizada para captura de clientes para um estúdio de maquiagem e tranças.",
-        image: "/images/services/FernandesBeauty.png",
-        tag: ["Serviços Realizados"],
-        previewUrl: "https://fernandesbeauty.com/",
-    },
 ];
 
 const ProjectsSection = () => {
-    const [tag, setTag] = useState("Projetos Acadêmicos");
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
-
-    const handleTagChange = (newTag) => {
-        setTag(newTag);
-    };
-
-    const filteredProjects = projectsData.filter((project) => 
-        project.tag.includes(tag)
-    );
 
     const cardVariants = {
         initial: { y: 50, opacity: 0},
@@ -97,14 +63,10 @@ const ProjectsSection = () => {
     return (
         <section id="projects">
             <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-                Projetos
+                Projects
             </h2>
-            <div className="text-white flex flex-row justify-center items-center gap-2  py-6">
-                <ProjectTag onClick={handleTagChange} name="Projetos Acadêmicos" isSelected={tag === "Projetos Acadêmicos"} />
-                <ProjectTag onClick={handleTagChange} name="Serviços Realizados" isSelected={tag === "Serviços Realizados"} />
-            </div>
             <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-                {filteredProjects.map((project, index) => (
+                {projectsData.map((project, index) => (
                 <motion.li 
                 key={index}
                   variants={cardVariants} 

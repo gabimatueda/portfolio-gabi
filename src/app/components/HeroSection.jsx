@@ -17,18 +17,14 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Olá, eu sou{" "}
+              Hello, I'm{" "}
             </span>
             <br></br>
             <TypeAnimation
               sequence={[
                 "Gabriela Mayumi",
                 1000,
-                "Web Developer",
-                1000,
-                "Mobile Developer",
-                1000,
-                "UI/UX Designer",
+                "Software Engineer",
                 1000,
               ]}
               wrapper="span"
@@ -37,7 +33,8 @@ const HeroSection = () => {
             />
           </h1>
             <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Transformo ideias em soluções digitais eficientes e intuitivas.
+              Transformo ideias em soluções digitais eficientes e intuitivas.
+            {/* 1x AWS Certified */}
           </p>
           <div>
             <Link
